@@ -11,10 +11,6 @@
 """
 
 import pandas as pd
-import numpy as np
-import os
-import gc
-import datetime as dt
 import warnings
 
 warnings.filterwarnings("ignore")
@@ -28,7 +24,7 @@ pd.set_option('display.width', 5000)
 from sklearn import datasets
 from sklearn import tree
 import treetorule
-from sklearn.tree import _tree
+
 
 if __name__ == "__main__":
     # sim data
