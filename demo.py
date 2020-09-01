@@ -41,7 +41,7 @@ if __name__ == "__main__":
     # train the model
     dtree = tree.DecisionTreeRegressor(max_depth=3, min_samples_leaf=40, min_samples_split=60, random_state=2020)
     dtree = dtree.fit(dataSim.iloc[:, :-1], dataSim['label'])
-    
+
     # tree model to rule
     cs = treetorule.treetorule(dtree, list(dataSim.columns)[:-1])
     cs.torule()
